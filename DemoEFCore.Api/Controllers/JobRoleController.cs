@@ -41,10 +41,10 @@ public class JobRoleController : Controller
         var result = await _jobRoleRepo.DeleteJobRoleAsync(EmployeeId, jobroleId);
         return result;
     }
-    [HttpGet("{id}")]
-    public async Task<JobRolesDto> GetJoroleById(Guid EmployeeId, Guid jobroleId)
+    [HttpGet("{employeeId}/jobrole/{jobRoleId}")]
+    public async Task<JobRolesDto> GetJoroleById(Guid employeeId, Guid jobRoleId)
     {
-        var result = await _jobRoleRepo.GetJobRoleByIdAsync(EmployeeId, jobroleId);
+        var result = await _jobRoleRepo.GetJobRoleByIdAsync(employeeId, jobRoleId);
         return result;
     }
 
