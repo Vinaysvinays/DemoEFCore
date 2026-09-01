@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DemoEFCore.Api/DemoEFCore.Api.csproj" />
+  <Project Path="DemoEFCore.DataLayer/DemoEFCore.DataLayer.csproj" />
+  <Project Path="DemoEFCore.Shared/DemoEFCore.Shared.csproj" />
+</Solution>
